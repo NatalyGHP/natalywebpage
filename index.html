@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nataly Herández</title>
+    <link rel="icon" href="n.png">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nataly Hernández</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Acerca de mi</a></li>
+          <li><a href="#experience">Formación</a></li>
+          <li><a href="#projects">Proyectos</a></li>
+          <li><a href="#contact">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nataly Hernández</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Acerca de mi</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Formación</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="na.jpeg" alt="Nataly Hernández profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hola, soy</p>
+        <h1 class="title">Nataly Hernández</h1>
+        <p class="section__text__p2">Estudiante de bachillerato</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('nataly.pdf')"
+          >
+            Descargar CV
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="instagram.png"
+            class="icon"
+            onclick="location.href='https://www.instagram.com/natalyhzp_24'"
+          />
+          <img
+            src="whatsapp.png"
+            class="icon"
+            onclick="location.href='https://wa.me/75000231'"
+          />
+          <img
+            src="github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/NatalyGHP'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Conóceme</p>
+      <h1 class="title">Acerca de mi</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="me.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="py.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <img
+                src="h.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <img
+                src="c.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <img
+                src="toeic.png"
+                alt="Experience icon"
+                class="icon"
+              />
+                
+              <h3>Experiencia</h3>
+              <p>2 años <br />Conocimientos intermedios-avanzados</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="inje.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <img
+                src="q.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Educación</h3>
+              <p>Bachillerato General 2023-<br />Diplomado ¡Supérate! 2022-</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Soy una estudiante de 17 años, en proceso de finalizar el bachillerato, con un fuerte interés en el estudio de la medicina,
+                mi mayor pasión. Me considero una persona altamente inteligente y dedicada al aprendizaje, con habilidades destacadas en
+                comunicación asertiva, pensamiento creativo, liderazgo y trabajo en equipo. Estoy comprometida con el servicio a los demás y
+                el crecimiento personal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+    <section id="achievements">
+      <div class="title">
+        <h1 class="title">Mis Logros</h1>
+      </div>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="medmax2.jpeg" alt="Logro 1" class="gallery-img" onclick="openLightbox();currentSlide(1)">
+          <p>Ganadores Expo Tech ¡Supérate! - Aplicación medica, MedMax - Supérate 2024</p>
+        </div>
+        <div class="gallery-item">
+          <img src="med1.jpeg" alt="Logro 2" class="gallery-img" onclick="openLightbox();currentSlide(2)">
+          <p>Medalla a excelencia por haber obtenido el primer lugar en la Expo Tech con aplicación MedMax - Instituto Nacional
+            Joaquín Ernesto Cárdenas 2024</p>
+        </div>
+        <div class="gallery-item">
+          <img src="golden.jpeg" alt="Logro 3" class="gallery-img" onclick="openLightbox();currentSlide(3)">
+          <p>Gold certificación TOEIC listening and reading - ¡Supérate! 2022-2023</p>
+        </div>
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="integridad.jpeg" alt="Logro 4" class="gallery-img">
+            <p>Camiseta Integridad, intercentros ¡Supérate! - Supérate 2023</p>
+          </div>
+          <div class="gallery-item">
+            <img src="e23.jpeg" alt="Logro 2" class="gallery-img">
+            <p>Excelencia académica Centro ¡Supérate! Grupo Q - 2023</p>
+          </div>
+          <div class="gallery-item">
+            <img src="v23.jpeg" alt="Logro 3" class="gallery-img" >
+            <p>Alto rendimiento académico en materia valores, Centro ¡Supérate! Grupo Q - 2023</p>
+          </div>
+          <div class="gallery-item">
+            <img src="i23.jpeg" alt="Logro 3" class="gallery-img" >
+            <p>Alto rendimiento académico en materia de inglés, Centro ¡Supérate! Grupo Q - 2023</p>
+          </div>
+          <div class="gallery-item">
+            <img src="ex22.jpeg" alt="Logro 3" class="gallery-img" >
+            <p>Excelencia académica Centro ¡Supérate! Grupo Q - 2022</p>
+          </div>
+          <div class="gallery-item">
+            <img src="e22.jpeg" alt="Logro 3" class="gallery-img" >
+            <p>Alto rendimiento académico	en materia de valores, Centro ¡Supérate! Grupo Q - 2022</p>
+          </div>
+          <div class="gallery-item">
+            <img src="i22.jpeg" alt="Logro 3" class="gallery-img">
+            <p>Alto rendimiento académico en materia de inglés, Centro ¡Supérate! Grupo Q - 2022</p>
+          </div>
+          <div class="gallery-item">
+            <img src="mi.jpeg" alt="Logro 3" class="gallery-img">
+            <p>Segundo lugar Hackathon Microsoft, con aplicación HelpEx - 2022</p>
+          </div>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='mislogros.pdf'"
+            >
+              Explorar más
+            </button>
+          </div>
+          <div class="btn-container"></div>
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="location.href='icare.pdf'"
+            >
+              Voluntariados
+            </button>
+          </div>
+      </div>
+    
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
+        <div class="lightbox-content">
+          <div class="lightbox-slide">
+            <img src="medmax1.jpeg" alt="Logro 1">
+            <p>Equipo MedMax, ganadores Expo Tech</p>
+          </div>
+          <div class="lightbox-slide">
+            <img src="med2.jpeg" alt="Logro 2">
+            <p>Medalla a la excelencia - INJECAR</p>
+          </div>
+          <div class="lightbox-slide">
+            <img src="gold.jpeg" alt="Logro 3">
+            <p>Medalla Gold TOEIC 2023</p>
+          </div>
+        </div>
+    
+        <!-- Controles -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+      </div>
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explora mi</p>
+      <h1 class="title">Formación</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Educación Media</h2>
+            <center><div class="article-container"></div></center>
+                <div>
+                  <center><h3>Instituto Nacional Joaquín Ernesto Cárdenas</h3></center>
+                  <p>2023-</p>
+                </div><br>
+                <div>
+                    <center><h3>Centro ¡Supérate! Grupo Q</h3></center>
+                    <p>2022-</p>
+                  </div><br><br>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Educación Básica</h2>
+            <div class="article-container">
+                <div>
+                  <h3>Tercer Ciclo</h3>
+                  <p>C.E Colonial Río Grande - 2020/2022</p>
+                </div>
+                <div>
+                  <h3>Segundo Ciclo</h3>
+                  <p>C.E Colonial Río Grande - 2017/2019</p>
+                </div>
+                <div>
+                    <h3>Primer Ciclo</h3>
+                    <p>C.E Colonial Río Grande - 2014/2016</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Educación Inicial</h2>
+        <div class="article-container">
+            <div>
+              <h3>Pre-Kinder</h3>
+              <p>C.E Colonial Río Grande - 2011</p>
+            </div>
+            <div>
+                <h3>Kinder</h3>
+                <p>C.E Colonial Río Grande - 2012</p>
+              </div>
+              <div>
+                <h3>Parvularía</h3>
+                <p>C.E Colonial Río Grande - 2013</p>
+              </div>
+        </div>
+        </div>
+    </section><br><br><br>
+    <section id="">
+        <p class="section__text__p1">Explora mis mas recientes</p>
+        <h1 class="title">Cursos y certificaciones</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="height: 40px; width: 40px;"
+                  src="solo.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Solo Learn - HTML&CSS</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='css.pdf'"
+                >
+                  Certificados
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="height: 40px; width: 40px;"
+                  src="hero.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Programming Hero</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='py1.pdf'"
+                >
+                  Certificados
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img style="height: 40px; width: 40px;"
+                    src="udemy.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">Cursos UDEMY-online</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='udemy.pdf'"
+                  >
+                    Certificados
+                  </button>
+                </div>
+              </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="height: 60px; width: 60px;"
+                  src="nasa.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Jóvenes Geoespaciales</h2>
+              <div class="btn-container">
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='geo.pdf'"
+                >
+                  Certificado
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                  <img style="width: 70px; height: 70px;"
+                    src="excel.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">MOS Excel certificación</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='mos.pdf'"
+                  >
+                    Certificado
+                  </button>
+                </div>
+              </div>
+              <div class="details-container color-container">
+                <div class="article-container">
+                  <img style="width: 50px; height: 60px;"
+                    src="py.png"
+                    alt="Project 2"
+                    class="project-img"
+                  />
+                </div>
+                <h2 class="experience-sub-title project-title">ITS Specialist - Python</h2>
+                <div class="btn-container">
+                  <button
+                    class="btn btn-color-2 project-btn"
+                    onclick="location.href='python.pdf'"
+                  >
+                    Certificado
+                  </button>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="height: 50px; width: 50px;"
+                  src="code.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Curso Express- CODE</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='code.pdf'"
+                >
+                  Certificado
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img style="height: 50px; width: 50px;"
+                  src="great.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Programa Great</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='g.jpeg'"
+                >
+                  Certificado
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><br><br><br>
+
+    <section id="projects">
+      <p class="section__text__p1">Explora mis</p>
+      <h1 class="title">Proyectos</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="img_page/MaxLogo.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">MedMax</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='index_page.html'"
+              >
+                Ver
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="verb.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Verb Tech</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='verb.mp4'"
+              >
+                Ver
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="HelpEx.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">HelpEx</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://apps.powerapps.com/play/e/default-d8e3bd44-0bba-426b-952d-ada7bb17393c/a/90f3ed98-9338-425e-868c-bb7fde0369c7?tenantId=d8e3bd44-0bba-426b-952d-ada7bb17393c&hint=aee98fe4-c5a0-493d-8ca3-d9f72b04f8a4&source=sharebutton&sourcetime=1727149411460'"
+              >
+                Ver
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><br><br>
+    <section id="contact">
+      <p class="section__text__p1">Ponte en contacto</p>
+      <h1 class="title">Contacto</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="gmail.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:natalygphernandez@gmail.com">natalygphernandez@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="whatsapp.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href='https://wa.me/75000231'>WhatsApp</a></p>
+        </div>
+      </div>
+    </section>
+      
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Acerca de mi</a></li>
+            <li><a href="#experience">Formación</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Nataly Herández. Todos los derechos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
